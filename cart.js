@@ -1,3 +1,4 @@
+// Carrito
 const cartBtn = document.getElementById('cart-btn');
 const cartModal = document.getElementById('cart-modal');
 const closeCart = document.getElementById('close-cart');
@@ -23,7 +24,7 @@ function updateCart() {
       </div>
     `;
   });
-  cartTotalDiv.innerHTML = Total: Q${total};
+  cartTotalDiv.innerHTML = "Total: Q" + total;
   cartCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
 }
 
@@ -68,7 +69,7 @@ cartItemsDiv.addEventListener('click', (e) => {
   }
 });
 
-// Cierra modal si das click fuera del contenido
+// Cierra modal si das click fuera del carrito
 window.onclick = function(event) {
   if (event.target == cartModal) {
     cartModal.style.display = "none";
