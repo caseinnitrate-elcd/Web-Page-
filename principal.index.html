@@ -4,19 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tienda Online - Bienvenida</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Material Icons y Font Awesome para íconos -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
     <div class="top-bar">
-      <div class="logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Logo" />
-      </div>
+      <button class="home-btn">
+        <span class="material-icons">home</span>
+      </button>
       <div class="search-container">
-        <span class="material-icons search-icon">search</span>
+        <span class="material-icons">search</span>
         <input type="text" class="search" placeholder="Buscar..." />
       </div>
       <button class="login-btn">Inicia Sesión</button>
@@ -26,137 +25,132 @@
       </div>
     </div>
 
-    <div class="main-banner"></div>
+    <div class="main-banner">
+  <img 
+    src="Imagen/Publicidad TICS.png" 
+    alt="Publicidad - ¿Quieres armar? Consigue tus componentes aquí" 
+    class="banner-img"
+  />
+</div>
 
-    <h2 class="section-title">NUESTROS PRODUCTOS</h2>
-    <div class="products-grid">
-      <div class="product-box">
+    <h2 class="section-title">PRODUCTOS MÁS VENDIDOS</h2>
+    <div class="products-row">
+
+      <div class="product-main">
         <a href="uno.html" class="product-link">
           <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" alt="Arduino Uno" />
-          <span>Arduino Uno</span>
+          <div class="product-title">Arduino Uno</div>
         </a>
         <button class="add-cart-btn" data-name="Arduino Uno" data-price="450">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="nano.html" class="product-link">
           <img src="Imagen/Arduino nano.jpg" alt="Arduino Nano" />
-          <span>Arduino Nano</span>
+          <div class="product-title">Arduino Nano</div>
         </a>
         <button class="add-cart-btn" data-name="Arduino Nano" data-price="300">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="298n.html" class="product-link">
           <img src="Imagen/Puente H.jpg" alt="Puente en H L298N" />
-          <span>Puente en H L298N</span>
+          <div class="product-title">Puente en H L298N</div>
         </a>
         <button class="add-cart-btn" data-name="Puente en H L298N" data-price="120">Agregar</button>
       </div>
-      <div class="product-box">
-        <a href="293dn.html" class="product-link">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/L293D_Motor_Driver_IC.jpg" alt="Puente en H L293D" />
-          <span>Puente en H L293D</span>
+      <div class="product-main">
+        <a href="l93d.html" class="product-link">
+          <img src="Imagen/93d.jpg" alt="Puente en H L293D" />
+          <div class="product-title">Puente en H L293D</div>
         </a>
         <button class="add-cart-btn" data-name="Puente en H L293D" data-price="80">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="reductor.html" class="product-link">
           <img src="Imagen/Motor reductor.jpg" alt="Motor Reductor" />
-          <span>Motor Reductor</span>
+          <div class="product-title">Motor Reductor</div>
         </a>
         <button class="add-cart-btn" data-name="Motor Reductor" data-price="90">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="n20.html" class="product-link">
           <img src="Imagen/Motor N20.jpg" alt="Motor N20" />
-          <span>Motor N20</span>
+          <div class="product-title">Motor N20</div>
         </a>
         <button class="add-cart-btn" data-name="Motor N20" data-price="110">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="sluz.html" class="product-link">
           <img src="Imagen/Sensor de Luz.jpg" alt="Sensor de Luz" />
-          <span>Sensor de Luz</span>
+          <div class="product-title">Sensor de Luz</div>
         </a>
         <button class="add-cart-btn" data-name="Sensor de Luz" data-price="25">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="scolor.html" class="product-link">
           <img src="Imagen/Sensor de color.jpg" alt="Sensor de Color" />
-          <span>Sensor de Color</span>
+          <div class="product-title">Sensor de Color</div>
         </a>
         <button class="add-cart-btn" data-name="Sensor de Color" data-price="120">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="ultrasonico.html" class="product-link">
           <img src="Imagen/Sensor Ultrasonico.jpg" alt="Sensor Ultrasonico" />
-          <span>Sensor Ultrasonico</span>
+          <div class="product-title">Sensor Ultrasonico</div>
         </a>
         <button class="add-cart-btn" data-name="Sensor Ultrasonico" data-price="40">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="infrarrojo.html" class="product-link">
           <img src="Imagen/Sensor Infrarojo.jpg" alt="Sensor Infrarrojo" />
-          <span>Sensor Infrarrojo</span>
+          <div class="product-title">Sensor Infrarrojo</div>
         </a>
         <button class="add-cart-btn" data-name="Sensor Infrarrojo" data-price="30">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="llantas.html" class="product-link">
           <img src="Imagen/Llantas.jpg" alt="Llantas" />
-          <span>Llantas</span>
+          <div class="product-title">Llantas</div>
         </a>
         <button class="add-cart-btn" data-name="Llantas" data-price="35">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="jumper.html" class="product-link">
           <img src="Imagen/Jumpers.jpg" alt="Bolsa de Jumper Surtida" />
-          <span>Bolsa de Jumper Surtida</span>
+          <div class="product-title">Bolsa de Jumper Surtida</div>
         </a>
         <button class="add-cart-btn" data-name="Bolsa de Jumper Surtida" data-price="20">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="9v.html" class="product-link">
           <img src="Imagen/Bateria 9V.jpg" alt="Batería 9V" />
-          <span>Batería 9V</span>
+          <div class="product-title">Batería 9V</div>
         </a>
         <button class="add-cart-btn" data-name="Batería 9V" data-price="15">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="litio.html" class="product-link">
           <img src="Imagen/Bateria Litio.jpg" alt="Batería Litio" />
-          <span>Batería Litio</span>
+          <div class="product-title">Batería Litio</div>
         </a>
         <button class="add-cart-btn" data-name="Batería Litio" data-price="40">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="porta.html" class="product-link">
           <img src="Imagen/Portabateria.jpg" alt="Porta batería" />
-          <span>Porta batería</span>
+          <div class="product-title">Porta batería</div>
         </a>
         <button class="add-cart-btn" data-name="Porta batería" data-price="25">Agregar</button>
       </div>
-      <div class="product-box">
+      <div class="product-main">
         <a href="cable.html" class="product-link">
           <img src="Imagen/Cable Arduino.jpg" alt="Cable para Arduino" />
-          <span>Cable para Arduino</span>
+          <div class="product-title">Cable para Arduino</div>
         </a>
         <button class="add-cart-btn" data-name="Cable para Arduino" data-price="15">Agregar</button>
       </div>
     </div>
 
-    <button class="see-more-btn">Ver más productos</button>
-
-    <footer>
-      <div class="contact">
-        <span>Contactanos:</span>
-        <span class="footer-icon"><i class="fa-regular fa-envelope"></i></span>
-        <span class="email">armeya.oficial@gmail.com</span>
-        <span class="footer-icon"><i class="fa-brands fa-instagram"></i></span>
-        <span class="instagram">@armeya.oficial</span>
-      </div>
-    </footer>
-
-    <!-- Carrito Modal -->
+    <!-- MODAL del carrito -->
     <div id="cart-modal" class="cart-modal">
       <div class="cart-modal-content">
         <span class="close" id="close-cart">&times;</span>
@@ -167,84 +161,5 @@
     </div>
   </div>
   <script src="cart.js"></script>
-  <script>
-    // Código para manejar el carrito (igual que antes)
-    const cartBtn = document.getElementById('cart-btn');
-    const cartModal = document.getElementById('cart-modal');
-    const closeCart = document.getElementById('close-cart');
-    const cartItemsDiv = document.getElementById('cart-items');
-    const cartTotalDiv = document.getElementById('cart-total');
-    const cartCount = document.getElementById('cart-count');
-    const addCartBtns = document.querySelectorAll('.add-cart-btn');
-
-    let cart = [];
-
-    function updateCart() {
-      cartItemsDiv.innerHTML = '';
-      let total = 0;
-      cart.forEach((item, idx) => {
-        total += item.price * item.quantity;
-        cartItemsDiv.innerHTML += `
-          <div class="cart-item">
-            <span>${item.name}</span>
-            <input type="number" min="1" value="${item.quantity}" data-idx="${idx}" class="qty-input"/>
-            <span>Q${item.price}</span>
-            <span>Q${item.price * item.quantity}</span>
-            <button class="remove-btn" data-idx="${idx}">Quitar</button>
-          </div>
-        `;
-      });
-      cartTotalDiv.innerHTML = Total: Q${total};
-      cartCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
-    }
-
-    addCartBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const name = btn.getAttribute('data-name');
-        const price = parseInt(btn.getAttribute('data-price'));
-        const idx = cart.findIndex(item => item.name === name);
-        if (idx > -1) {
-          cart[idx].quantity += 1;
-        } else {
-          cart.push({ name, price, quantity: 1 });
-        }
-        updateCart();
-      });
-    });
-
-    cartBtn.addEventListener('click', () => {
-      cartModal.style.display = 'flex';
-      updateCart();
-    });
-
-    closeCart.addEventListener('click', () => {
-      cartModal.style.display = 'none';
-    });
-
-    // Cambiar cantidad y quitar producto
-    cartItemsDiv.addEventListener('input', (e) => {
-      if (e.target.classList.contains('qty-input')) {
-        const idx = e.target.getAttribute('data-idx');
-        let val = parseInt(e.target.value);
-        if (isNaN(val) || val < 1) val = 1;
-        cart[idx].quantity = val;
-        updateCart();
-      }
-    });
-    cartItemsDiv.addEventListener('click', (e) => {
-      if (e.target.classList.contains('remove-btn')) {
-        const idx = e.target.getAttribute('data-idx');
-        cart.splice(idx, 1);
-        updateCart();
-      }
-    });
-
-    // Cierra modal si das click fuera del contenido
-    window.onclick = function(event) {
-      if (event.target == cartModal) {
-        cartModal.style.display = "none";
-      }
-    }
-  </script>
 </body>
 </html>
